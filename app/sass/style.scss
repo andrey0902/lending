@@ -1,0 +1,224 @@
+@import "libs";
+@import "fonts";
+body{
+  font-size: 13px;
+  font-family: Arial;
+  color: #000;
+  background-image: url(../img/page-bg.png);
+  background-repeat: repeat;
+  line-height:  1.7;
+}
+a:hover, a:focus{
+  text-decoration: none;
+}
+.top-line{
+  width: 100%;
+  background: #2a2b2c;
+  border-top: 3px solid #cc3333;
+
+}
+.social{
+  ul{
+    display: flex;
+    padding: 6px 3px;
+    margin:0;
+    list-style-type: none;
+    li{
+      height:23px;
+      width: 23px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 25px;
+      margin-right: 6px;
+
+      i{
+        color: #fff;
+        line-height: 0;
+        font-size: 15px;
+      }
+      &.s-face{
+        background-color: #2b669a;
+        transition: .5s ease;
+        cursor: pointer;
+        &:hover{
+          background-color: lighten(#2b669a, 10%);
+        }
+      }
+      &.s-drib{
+        background-color: #E95B76;
+        transition: .5s ease;
+        cursor: pointer;
+        &:hover{
+          background-color: lighten(#E95B76, 10%);
+        }
+      }
+      &.s-tw{
+        background-color: #29B0E4;
+        transition: .5s ease;
+        cursor: pointer;
+        &:hover{
+          background-color: lighten(#29B0E4, 10%);
+        }
+      }
+      &.s-gmail{
+        background-color: rgba(190, 191, 190, 0.51);
+        transition: .5s ease;
+        cursor: pointer;
+        &:hover{
+          background-color: lighten(rgba(190, 191, 190, 0.5), 10%);
+        }
+      }
+      &.s-vimeo{
+        background-color: #08B0EE;
+        transition: .5s ease;
+        cursor: pointer;
+        &:hover{
+          background-color: lighten(#08B0EE, 10%);
+        }
+      }
+      &.s-face i:before{
+        content: "\f09a";
+        font-family: fontawesome;
+      }
+      &.s-drib i:before{
+        content: "\f17d";
+        font-family: fontawesome;
+        font-size: 20px;
+        margin-left: -4px;
+        line-height: 22px;
+      }
+      &.s-tw i:before{
+        content: "\f099";
+        font-family: fontawesome;
+        margin-left: -2px;
+      }
+      &.s-gmail i:before{
+        content: "\f1a0";
+        font-family: fontawesome;
+      }
+      &.s-vimeo i:before{
+        content: "\f27d";
+        font-family: fontawesome;
+        margin-left: -4px;
+      }
+    }
+  }
+}
+$blue: #77d3fd;
+$black: #383636;
+.test{
+  padding: 20px 30px;
+}
+
+.selectize-dropdown-content{
+ height: 100px;
+  overflow: auto;
+}
+
+.select-control{
+  padding: 50px;
+  background-color: #fff;
+}
+/*select custom*/
+.selectize-input{
+  border-radius: 0;
+  border: 2px solid rgba(#e3e6e8, .6);
+  box-shadow: none;
+  transition: .4s ease;
+}
+.selectize-input.input-active{
+  box-shadow: none;
+  border-color: $blue;
+}
+
+.selectize-dropdown{
+  border: none;
+  box-shadow: none;
+  &-content{
+    border-left: 2px solid $blue;
+  }
+
+}
+/*bootstrap custom*/
+.select-btn{
+  padding: 10px 10px;
+  display: inline-block;
+  background-color: transparent;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  border-radius: 0;
+  border: 2px solid #e3e6e8;
+  box-shadow: none;
+  transition: .4s ease;
+  text-align: left;
+  color: #e3e6e8;
+  font-size: 18px;
+
+  i::after{
+    border: none;
+    content:'\f107';
+    font: normal normal normal 18px/1 FontAwesome;
+    position: absolute;
+    right: 25px;
+    top: 16px;
+  }
+}
+.dropdown-menu {
+  position: absolute;
+  top: 96%;
+  left: 15px;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: calc(100% - 30px);
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  background-color: #fff;
+  border: none;
+  border-left: 2px solid $blue;
+  border-radius: 0;
+  box-shadow: none;
+  background-clip: padding-box;
+  transition: .4s ease;
+  outline: none;
+
+  li{
+    padding: 10px 10px;
+    transition: all  1s ease;
+    &:hover a{
+      transition: all  1s ease;
+      color: #77d3fd;
+      font-weight: bold;
+    }
+  }
+  a{
+    color: $black;
+    font-size: 18px;
+    transition: all .4s ease;
+  }
+}
+button:active, button:focus{
+  outline: none;
+}
+.open .select-btn{
+  border-color: $blue;
+  color: $blue;
+  i::after{
+    border: none;
+    content:'\f106';
+  }
+}
+.dropdown-menu{
+  height: 200px;
+}
+/*custom scroll*/
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: $blue;
+}
+.mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar, .mCS-minimal-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar{
+  background-color: $blue;
+}
