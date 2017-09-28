@@ -15,4 +15,12 @@ document.addEventListener('DOMContentLoaded', function () {
         theme:"minimal-dark",
         mouseWheel:{ preventDefault:true }
     });
+
+    $('.carousel').carousel({
+        interval: 1000000
+    })
+    function onResize() {
+        $('.package ul').equalHeights();
+    }onResize()
+
 } )

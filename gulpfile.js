@@ -20,6 +20,7 @@ gulp.task('common-js', function() {
 		'app/libs/jquery-3.2.1.min.js',
 		'app/libs/selectize/js/standalone/selectize.js',
 		'app/libs/scroll/jquery.mCustomScrollbar.concat.min.js',
+		'app/libs/equalHeights/equalheights.js',
 		'app/js/common.js',
 		])
 	.pipe(concat('common.min.js'))

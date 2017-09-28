@@ -3,55 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <title>Shop</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.3/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 <body>
-<header>
+<header class="header">
     <div class="top-line">
         <div class="container">
             <div class="row">
-                <nav class="social">
-                    <ul>
-                        <li class="s-face"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li class="s-drib"><a href="#"><i></i></a></li>
-                        <li class="s-tw"><a href="#"><i></i></a></li>
-                        <li class="s-gmail"><a href="#"><i></i></a></li>
-                        <li class="s-vimeo"><a href="#"><i></i></a></li>
-                    </ul>
-                </nav>
+                <div class="top-logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="auth">
+                    <button class="auth-button button">Log in</button>
+                    <button class="auth-button button">Register</button>
+                </div>
             </div>
         </div>
     </div>
-</header>
+    <!--    <img src="img/slid-1.jpg" alt="">-->
+    <div class="top-carousel">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="item-wrapper">
+                        <img class="item-img" src="img/slid-1.jpg" alt="slide">
+                    </div>
+                    <div class="carousel-caption">
+                        <h1 class="h1">
+                            Setup Globally
+                        </h1>
+                        <p>
+                            Global business setup and management services.Some more text
+                            and bullets points business setup and management
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-wrapper">
+                        <img class="item-img" src="img/slid-1.jpg" alt="slide">
+                    </div>
+                    <div class="carousel-caption">
+                        <h1 class="h1">
+                            Setup Globally
+                        </h1>
+                        <p>
+                            Global business setup and management services.Some more text
+                            and bullets points business setup and management
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-<section class="test">
-
-    <div class="cont-select">
-
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
-
-    <section class="">
+    <div class="selected">
         <div class="container">
             <div class="row">
-                <div class="col-md-10 select-control col-md-offset-1">
+                <div class="col-md-10 selected-control col-md-offset-1">
                     <div class="row">
-                        <div class="col-sm-3 nn">
-                            <select name="test" id="test" class="city">
-                                <option value="">City</option>
-                                <option>Chase1</option>
-                                <option>Chase2</option>
-                                <option>Chase3</option>
-                                <option>Chase4</option>
-                                <option>Chase5</option>
-                            </select>
+                        <div class="col-md-12">
+                            <p>
+                                Lets help you find the right <span class="color-blue">business license and package</span>
+                            </p>
                         </div>
-                        <div class="col-sm-3 nn">
+                        <div class="col-sm-3">
                             <button class="select-btn" type="button" data-toggle="dropdown">
                                 <i class="fa"></i>
                                 City
@@ -79,13 +113,531 @@
                                 <li><a role="menuitem" tabindex="-1" href="#">Option 20</a></li>
                             </ul>
                         </div>
-                        <div class="col-sm-3 nn">3</div>
-                        <div class="col-sm-3 nn">4</div>
+                        <div class="col-sm-3">
+                            <button class="select-btn" type="button" data-toggle="dropdown">
+                                <i class="fa"></i>
+                                Activity
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-scrollbar">
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 1</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 2</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 3</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 4</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 5</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 6</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 7</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 8</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 9</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 10</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 11</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 12</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 13</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 14</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 15</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 16</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 17</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 18</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 19</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 20</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="select-btn" type="button" data-toggle="dropdown">
+                                <i class="fa"></i>
+                                Size
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-scrollbar">
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 1</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 2</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 3</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 4</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 5</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 6</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 7</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 8</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 9</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 10</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 11</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 12</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 13</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 14</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 15</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 16</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 17</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 18</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 19</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Option 20</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <button class="select-btn button-red" type="button">
+                                Get started
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</header>
+<section class="s-popular">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2">
+                    Popular packages
+                </h2>
+                <p class="point-decorator">
+                    <span class="point point-1"></span>
+                    <span class="point point-2"></span>
+                    <span class="point point-3"></span>
+                    <span class="point point-4"></span>
+                </p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                <div class="package">
+                    <div class="package-img">
+                        <img src="img/package-1.jpg" alt="package">
+                    </div>
+                    <div class="description">
+                        <h3 class="h3">
+                            Ajman offshore
+                        </h3>
+                        <ul>
+                            <li class="package-item"><div class="icon"><img src="img/free.jpg" alt="img"></div><span>100% free tax business hub</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/visa.jpg" alt="img"></div><span>Scalable business package from
+no visa to 5 employee visa</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/rocket.jpg" alt="img"></div><span>Excellent for Consulting, IT
+and creative startups</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/deal.jpg" alt="img"></div><span>Business hub option with access
+to meeting rooms and other facilities</span></li>
+                        </ul>
+                        <button class="button package-button">
+                            Start now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                <div class="package">
+                    <div class="package-img">
+                        <img src="img/package-2.jpg" alt="package">
+                    </div>
+                    <div class="description">
+                        <h3 class="h3">
+                            Shams
+                        </h3>
+                        <ul>
+                            <li class="package-item"><div class="icon"><img src="img/bank.jpg" alt="img"></div>
+                                <span>Corporate banking solutions</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/insurance.jpg" alt="img"></div>
+                                <span>100% foreign ownership
+no visa to 5 employee visa</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/burj-al-arab.jpg" alt="img"></div>
+                                <span>Can trade within Dubai and the UAE and creative startups</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/placeholder.jpg" alt="img"></div>
+                                <span>Requires no local sponsor</span></li>
+                        </ul>
+                        <button class="button package-button">
+                            Start now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                <div class="package">
+                    <div class="package-img">
+                        <img src="img/package-3.jpg" alt="package">
+                    </div>
+                    <div class="description">
+                        <h3 class="h3">
+                            Ajman offshore
+                        </h3>
+                        <ul>
+                            <li class="package-item"><div class="icon"><img src="img/list.jpg" alt="img"></div>
+                                <span>Requires a local sponsor (Provided with package)</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/hangar.jpg" alt="img"></div>
+                                <span>Optional warehouse facility</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/online-shop.jpg" alt="img"></div>
+                                <span>Integrated e-commerce fulfillment center</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/dollar.jpg" alt="img"></div>
+                                <span>Integrated e-commerce fulfillment center</span></li>
+                        </ul>
+                        <button class="button package-button">
+                            Start now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                <div class="package">
+                    <div class="package-img">
+                        <img src="img/package-1.jpg" alt="package">
+                    </div>
+                    <div class="description">
+                        <h3 class="h3">
+                            Ajman offshore
+                        </h3>
+                        <ul>
+                            <li class="package-item"><div class="icon"><img src="img/free.jpg" alt="img"></div><span>100% free tax business hub</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/visa.jpg" alt="img"></div><span>Scalable business package from
+no visa to 5 employee visav</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/rocket.jpg" alt="img"></div><span>Excellent for Consulting, IT
+and creative startups</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/deal.jpg" alt="img"></div><span>Business hub option with access
+to meeting rooms and other facilities</span></li>
+                        </ul>
+                        <button class="button package-button">
+                            Start now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                <div class="package">
+                    <div class="package-img">
+                        <img src="img/package-2.jpg" alt="package">
+                    </div>
+                    <div class="description">
+                        <h3 class="h3">
+                            Shams
+                        </h3>
+                        <ul>
+                            <li class="package-item"><div class="icon"><img src="img/bank.jpg" alt="img"></div>
+                                <span>Corporate banking solutions</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/insurance.jpg" alt="img"></div>
+                                <span>100% foreign ownership
+no visa to 5 employee visa</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/burj-al-arab.jpg" alt="img"></div>
+                                <span>Can trade within Dubai and the UAE and creative startups</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/placeholder.jpg" alt="img"></div>
+                                <span>Requires no local sponsor</span></li>
+                        </ul>
+                        <button class="button package-button">
+                            Start now
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                <div class="package">
+                    <div class="package-img">
+                        <img src="img/package-3.jpg" alt="package">
+                    </div>
+                    <div class="description">
+                        <h3 class="h3">
+                            Ajman offshore
+                        </h3>
+                        <ul>
+                            <li class="package-item"><div class="icon"><img src="img/list.jpg" alt="img"></div>
+                                <span>Requires a local sponsor (Provided with package)</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/hangar.jpg" alt="img"></div>
+                                <span>Optional warehouse facility</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/online-shop.jpg" alt="img"></div>
+                                <span>Integrated e-commerce fulfillment center</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/dollar.jpg" alt="img"></div>
+                                <span>Integrated e-commerce fulfillment center</span></li>
+                        </ul>
+                        <button class="button package-button">
+                            Start now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s-compare">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2">
+                    Compare
+                </h2>
+                <p class="point-decorator">
+                    <span class="point point-1"></span>
+                    <span class="point point-2"></span>
+                    <span class="point point-3"></span>
+                    <span class="point point-4"></span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 col-margin-b-t">
+                <button class="select-btn" type="button" data-toggle="dropdown">
+                    <i class="fa"></i>
+                    Countries
+                </button>
+                <ul class="dropdown-menu dropdown-menu-scrollbar">
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 1</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 2</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 3</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 4</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 5</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 6</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 7</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 8</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 9</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 10</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 11</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 12</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 13</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 14</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 15</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 16</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 17</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 18</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 19</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 20</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 col-margin-b-t">
+                <button class="select-btn" type="button" data-toggle="dropdown">
+                    <i class="fa"></i>
+                    Dubai
+                </button>
+                <ul class="dropdown-menu dropdown-menu-scrollbar">
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 1</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 2</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 3</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 4</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 5</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 6</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 7</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 8</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 9</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 10</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 11</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 12</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 13</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 14</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 15</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 16</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 17</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 18</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 19</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 20</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 col-margin-b-t">
+                <button class="select-btn" type="button" data-toggle="dropdown">
+                    <i class="fa"></i>
+                    Hong Kong
+                </button>
+                <ul class="dropdown-menu dropdown-menu-scrollbar">
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 1</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 2</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 3</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 4</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 5</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 6</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 7</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 8</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 9</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 10</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 11</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 12</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 13</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 14</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 15</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 16</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 17</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 18</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 19</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 20</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 col-margin-b-t">
+                <button class="select-btn" type="button" data-toggle="dropdown">
+                    <i class="fa"></i>
+                    Singapore
+                </button>
+                <ul class="dropdown-menu dropdown-menu-scrollbar">
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 1</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 2</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 3</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 4</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 5</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 6</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 7</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 8</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 9</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 10</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 11</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 12</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 13</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 14</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 15</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 16</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 17</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 18</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 19</a></li>
+                    <li><a role="menuitem" tabindex="-1" href="#">Option 20</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                <div class="package">
+                    <div class="package-img">
+                        <img src="img/package-1.jpg" alt="package">
+                    </div>
+                    <div class="description">
+                        <ul>
+                            <li class="package-item"><div class="icon"><img src="img/free.jpg" alt="img"></div><span>100% free tax business hub</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/visa.jpg" alt="img"></div><span>Scalable business package from
+no visa to 5 employee visav</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/rocket.jpg" alt="img"></div><span>Excellent for Consulting, IT
+and creative startups</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/deal.jpg" alt="img"></div><span>Business hub option with access
+to meeting rooms and other facilities</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                <div class="package">
+                    <div class="package-img">
+                        <img src="img/package-2.jpg" alt="package">
+                    </div>
+                    <div class="description">
+                        <ul>
+                            <li class="package-item"><div class="icon"><img src="img/bank.jpg" alt="img"></div>
+                                <span>Corporate banking solutions</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/insurance.jpg" alt="img"></div>
+                                <span>100% foreign ownership
+no visa to 5 employee visa</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/burj-al-arab.jpg" alt="img"></div>
+                                <span>Can trade within Dubai and the UAE and creative startups</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/placeholder.jpg" alt="img"></div>
+                                <span>Requires no local sponsor</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1">
+                <div class="package">
+                    <div class="package-img">
+                        <img src="img/package-3.jpg" alt="package">
+                    </div>
+                    <div class="description">
+                        <ul>
+                            <li class="package-item"><div class="icon"><img src="img/list.jpg" alt="img"></div>
+                                <span>Requires a local sponsor (Provided with package)</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/hangar.jpg" alt="img"></div>
+                                <span>Optional warehouse facility</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/online-shop.jpg" alt="img"></div>
+                                <span>Integrated e-commerce fulfillment center</span></li>
+                            <li class="package-item"><div class="icon"><img src="img/dollar.jpg" alt="img"></div>
+                                <span>Integrated e-commerce fulfillment center</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="button">
+                    Compare
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="s-works">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pos-relative">
+                <h2 class="h2">
+                    How it works
+                </h2>
+                <p class="point-decorator">
+                    <span class="point point-1"></span>
+                    <span class="point point-2"></span>
+                    <span class="point point-3"></span>
+                    <span class="point point-4"></span>
+                    <span class="arrow"><img src="img/r-arrow.png" alt=""></span>
+                </p>
+            </div>
+            <div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+                <h3 class="h3">
+                    Setup Globally
+                </h3>
+                <ul class="list">
+                    <li>
+                        <div class="icon-wrapper">
+                            <span class="number">01</span>
+                            <img src="img/layer-19.png" alt="icon">
+                            <p class="arrow-three">
+                                <i class="fa arrow"></i>
+                                <i class="fa arrow"></i>
+                                <i class="fa arrow"></i>
+                            </p>
+                        </div>
+                        <p class="text">Compare and find the best business license and setup</p>
+                    </li>
+                    <li>
+                        <div class="icon-wrapper">
+                            <span class="number">02</span>
+                            <img src="img/pc.png" alt="icon">
+                            <p class="arrow-three">
+                                <i class="fa arrow"></i>
+                                <i class="fa arrow"></i>
+                                <i class="fa arrow"></i>
+                            </p>
+                        </div>
+                        <p class="text">Apply Online</p>
+                    </li>
+                    <li>
+                        <div class="icon-wrapper">
+                            <span class="number">03</span>
+                            <img src="img/clock.png" alt="icon"></div>
+                        <p class="text">Obtain your business lisense and service within agree timelines</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-md-offset-3 col-sm-5 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+                <h3 class="h3">
+                    Manage Globally
+                </h3>
+                <ul class="list">
+                    <li>
+                        <div class="icon-wrapper">
+                            <span class="number">01</span>
+                            <img src="img/file.png" alt="icon">
+                            <p class="arrow-three">
+                                <i class="fa arrow"></i>
+                                <i class="fa arrow"></i>
+                                <i class="fa arrow"></i>
+                            </p>
+                        </div>
+                        <p class="text">Free access to Manage Globaly to manage staff and organization</p>
+                    </li>
+                    <li>
+                        <div class="icon-wrapper">
+                            <span class="number">02</span>
+                            <img src="img/ok.jpg" alt="icon">
+                            <p class="arrow-three">
+                                <i class="fa arrow"></i>
+                                <i class="fa arrow"></i>
+                                <i class="fa arrow"></i>
+                            </p>
+                        </div>
+                        <p class="text">Manage staff, organization records</p>
+                    </li>
+                    <li>
+                        <div class="icon-wrapper">
+                            <span class="number">03</span>
+                            <img src="img/house.png" alt="icon"></div>
+                        <p class="text">Apply for online government and corporate services </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
 
 <script src="js/scripts.min.js"></script>
