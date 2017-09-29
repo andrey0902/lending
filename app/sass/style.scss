@@ -1,6 +1,7 @@
 @import "libs";
 @import "fonts";
 @import "button";
+@import "../libs/css-hamburgers/hamburgers";
 
 $blue: #77d3fd;
 $dark-blue: #1729fa;
@@ -26,7 +27,20 @@ a, a:hover, a:focus{
  height: 100px;
   overflow: auto;
 }
+.hamburger{
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  z-index: 55;
+  display: none;
 
+  &-inner{
+    background-color: #fff;
+    &::before, &::after{
+      background-color: #fff;
+    }
+  }
+}
 .col-margin-b-t{
   margin-top: 15px;
   margin-bottom: 15px;
@@ -206,10 +220,12 @@ button:active, button:focus{
   .item{
     &-img{
       height: 593px;
-      width: 100%;
+      /*width: 100%;*/
+      object-fit: cover;
 
     }
     &-wrapper{
+      overflow: hidden;
 
       &::after{
         content: '';
@@ -459,7 +475,8 @@ button:active, button:focus{
   .point-decorator{
     position: absolute;
     top: 150px;
-    width: 100%;
+    width: 80%;
+    left: 10%;
   }
   .list{
     padding: 0;
@@ -479,6 +496,15 @@ button:active, button:focus{
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-basis: 65px;
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    img{
+      max-width: 100%;
+      max-height: 100%;
+      display: inline-block;
+    }
 
     .number{
       position: absolute;
@@ -491,7 +517,7 @@ button:active, button:focus{
     }
   }
   .text{
-    width: 221px;
+    max-width: 221px;
     color: #0a0e3b;
     font-size: 18px;
     font-weight: 300;
@@ -514,7 +540,74 @@ button:active, button:focus{
     }
   }
 }
-/*
+.footer{
+  background-color: #111321;
+  padding: 80px 0;
 
-*/
+  .flex-column{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+  }
+  .flex{
+    display: flex;
+    align-content: stretch;
+  }
+
+  .footer-logo{
+    width: 132px;
+    height: auto;
+    img{
+      width: 100%;
+    }
+  }
+  .copyright{
+    opacity: 0.5;
+    color: #9a9a9a;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+  }
+  .h4{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .list{
+    padding: 0 0 0 17px;
+    margin: 35px 0 0 0;
+    li{
+      color: #9b9b9b;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 34px;
+    }
+  }
+  .my-col{
+    display: block!important;
+    position: relative!important;
+  }
+  .footer-first{
+    display: flex!important;
+  }
+}
+.m-logo{
+  display: none;
+  .footer-logo{
+    margin: 0 auto!important;
+
+  }
+}
+.copyright-2{
+  margin-top: 2%;
+  .copyright{
+    text-align: center;
+  }
+}
+
 @import "media";
+.active{
+  display: block;
+}

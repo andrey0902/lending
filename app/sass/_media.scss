@@ -85,6 +85,51 @@
   .dropdown-menu {
    top: 76%;
   }
+  .flex{
+    display: block;
+  }
+  .footer{
+    .footer-first{
+      display: none!important;
+    }
+  }
+  .m-logo{
+    display: block;
+  }
+  .footer {
+    padding: 40px 0;
+    .h4{
+      margin-top: 15px;
+    }
+    .list{
+      margin-top: 20px;
+    }
+  }
+  .my-col{
+    .h4{
+      margin-top: 25px!important;
+      text-align: center;
+    }
+    .list{
+      width: 50%;
+      margin: auto;
+    }
+  }
+  .s-works{
+    .icon-wrapper {
+      width: 35px;
+      height: 35px;
+      flex-basis: 35px;
+
+    }
+    .arrow-three{
+      left: 13px;
+    }
+    .icon-wrapper .number {
+      top: -23px;
+      font-size: 22px;
+    }
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -99,6 +144,11 @@
   }
   .auth{
     display: none;
+    top: 100px !important;
+
+  }
+  .hamburger{
+    display: block;
   }
   .s-works{
     padding: 70px 0 110px;
@@ -107,9 +157,17 @@
       padding-bottom: 20px;
     }
     .h3{
-      font-size: 20px;
+      font-size: 18px;
+    }
+    .text{
+      font-size: 14px;
+    }
+    .s-works .icon-wrapper {
+      width: 35px;
+      height: 35px;
     }
   }
+
 }
 
 
@@ -124,6 +182,37 @@
       display: block;
       width: 200px;
     }
+  }
+  .s-works{
+    padding: 70px 0 110px;
+
+    .h2{
+      font-size: 37px;
+      padding-bottom: 16px;
+    }
+    .h3{
+      font-size: 14px;
+    }
+    .text{
+      font-size: 11px;
+      margin-left: 8px;
+    }
+    .icon-wrapper {
+      width: 35px;
+      height: 35px;
+      img{
+        height: 90%;
+      }
+    }
+    .icon-wrapper .number {
+      left: -21px;
+      top: -24px;
+      font-size: 20px;
+    }
+    .arrow-three{
+      left: 8px;
+    }
+
   }
 
 }

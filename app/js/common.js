@@ -21,6 +21,19 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     function onResize() {
         $('.package ul').equalHeights();
-    }onResize()
 
+
+    }onResize();
+    window.addEventListener('resize', function (e) {
+        if(e.target.innerWidth > 768){
+            console.log('resize');
+            $('.my-col').equalHeights();
+            return;
+        }
+        $('.my-col').css('height', 'auto');
+    })
+    $('.hamburger').on('click', function () {
+        $(this).toggleClass('is-active');
+        $('.auth').toggleClass('active');
+    })
 } )
